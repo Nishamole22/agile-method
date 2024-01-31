@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <link rel="stylesheet" href="../std/bootstrap 5.3.2/bootstrap.min.css">
+    <script src="../std/bootstrap 5.3.2/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="h1">Get the Factorail for given number</div>
+    <form action="" class="form-control">
+        <label for="input">Enter Number</label>
+        <input type="number" id="input" placeholder="" required>
+    </form>
+    <button class="btn-outline-dark" onclick="factFind()">Click Me</button>
+    <p>Output : </p><div id="output" class=""></div>
+    <script>
+        function factFind(){
+            let input=document.getElementById("input").value;
+            let fact=1;
+            for (let i = 1; i <= input; i++) {
+                fact*=i;                               
+            }
+            document.getElementById("output").innerHTML=fact;
+            console.log(fact);
+        }
+    </script>
+    
+
+</body>
+</html>
